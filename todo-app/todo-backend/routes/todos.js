@@ -41,8 +41,6 @@ singleRouter.get('/', async (req, res) => {
 /* PUT todo. */
 singleRouter.put('/', async (req, res) => {
   const body = req.body
-  console.log("Body",body)
-  console.log("id", req.todo.id)
 
   const todo = {
     text: body.text,
