@@ -13,6 +13,7 @@ if (!REDIS_URL) {
   getAsync = redisIsDisabled
   setAsync = redisIsDisabled
 } else {
+  console.log('Redis enabled')
   const client = redis.createClient({
     url: REDIS_URL
   })
