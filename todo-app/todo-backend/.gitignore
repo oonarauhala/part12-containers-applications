@@ -62,3 +62,6 @@ typings/
 
 # rest client test requests
 requests/
+
+# redis persisting data
+redis_data

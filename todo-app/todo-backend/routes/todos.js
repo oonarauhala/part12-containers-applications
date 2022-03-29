@@ -20,7 +20,7 @@ router.get('/statistics', async (_, res) => {
   console.log('getting...')
   const count = await getAsync('count')
   return res.json({
-    'added_todos': count
+    'added_todos': parseInt(count) || 0
   })
 })
 
