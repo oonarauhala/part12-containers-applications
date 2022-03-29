@@ -1,0 +1,68 @@
+-Containers:
+
+docker container run (-it) (-p) IMAGE-NAME (command)
+  -creates new container from image
+  -it: interactive
+  -p: ports (e.g. 3000:3000 <host:container>). Now the browser can access container
+  -command: command to be executed inside container (e.g. bash, ls)
+
+docker container ls -a
+  -list all containers
+
+docker start CONTAINER-ID/CONTAINER-NAME
+  -start previoisly created container
+  -it & command available
+
+docker kill CONTAINER-ID/CONTAINER-NAME
+  -stop container
+  -beginning of id is enough (e.g. 2a)
+
+docker container rm CONTAINER-ID/CONTAINER-NAME
+
+-Images:
+
+docker commit CONTAINER-ID/CONTAINER-NAME NEW-IMAGE-NAME
+  -creates new image from container
+
+
+-Dockerfile
+
+docker build -t IMAGE-NAME
+  -builds an image based on Dockerfile
+  -t: tag
+
+docker image rm IMAGE-NAME
+  -remove image
+
+docker image ls
+  -list Images
+
+
+-.dockerignore:
+
+like gitignore, select files that will not be added to image
+
+
+-Docker-compose
+docker-compose.yml file specifies services etc.
+
+docker-compose (-f) up (--build)
+  -build and run application 
+  -f: specify which docker-compose file is run
+  --build: rebuild image
+
+docker-compose down
+  -close application
+
+
+
+
+
+
+
+
+
+
+
+
+
