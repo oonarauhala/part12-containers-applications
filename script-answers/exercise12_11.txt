@@ -1,0 +1,6 @@
+docker ps
+docker exec -it todo-backend_redis_1 redis-cli
+KEYS *
+GET count
+SET count 9001
+DEL count
