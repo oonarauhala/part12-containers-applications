@@ -27,7 +27,8 @@ docker commit CONTAINER-ID/CONTAINER-NAME NEW-IMAGE-NAME
 
 -Dockerfile
 
-docker build -t IMAGE-NAME
+docker build . -t IMAGE-NAME
+  - . includes everything in working directory in the image (excluding stuff in .dockerignore)
   -builds an image based on Dockerfile
   -t: tag
 
