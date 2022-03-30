@@ -9,3 +9,5 @@ services:
     ports:
       - 3003:3001
     container_name: todo-frontend-dev
+  debug-helper:
+    image: busybox
