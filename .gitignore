@@ -1,1 +1,4 @@
 .DS_Store
+.env
+requests
+node_modules
