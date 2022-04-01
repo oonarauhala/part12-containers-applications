@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  bloglist-backend:
+    image: bloglist-backend
+    build:
+      context: bloglist-backend
+      dockerfile: Dockerfile
+    ports:
+      - 3003:3003
+    container_name: bloglist-backend
+  bloglist-frontend:
+    image:  bloglist-frontend
+    build:
+      context: bloglist-frontend
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
